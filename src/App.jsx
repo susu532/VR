@@ -19,9 +19,8 @@ export default function App() {
         <aside className="info">
           <h2>About this demo</h2>
           <p>
-            This is a benign, local demo that embeds an virtual experience using an
-            iframe. Replace the `EMPERIA_URL` in `src/components/EmperiaEmbed.jsx`
-            with your published virtual experience URL.
+            A virtual experience 
+            
           </p>
         </aside>
       </main>
