@@ -7,7 +7,7 @@ export default function App() {
       <header className="hero">
         <div className="hero-content">
           <h1>Dior — Atelier of Dreams</h1>
-          <p>3D virtual experience  (embedded via &lt;iframe&gt;)</p>
+          <p>3D virtual experience  </p>
         </div>
       </header>
 
