@@ -18,7 +18,16 @@ export default function EmperiaEmbed() {
   return (
     
     <Card3D variant="glass" hover3D={false} className={styles.emperiaCard}>
-      
+      <div className={styles.emperiaCard}> <iframe
+            title="Virtual Experience"
+            src={url}
+            frameBorder="0"
+            allow="autoplay; fullscreen; vr; xr-spatial-tracking; gyroscope; accelerometer"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
+            onLoad={handleIframeLoad}
+            className={styles.iframe}
+          /></div>
+     
       <div className={styles.emperiaWrapper}>
         <div className={styles.emperiaToolbar}>
           <div className={styles.badge}>
@@ -44,15 +53,7 @@ export default function EmperiaEmbed() {
               </GlowingText>
             </div>
           )}
-          <iframe
-            title="Virtual Experience"
-            src={url}
-            frameBorder="0"
-            allow="autoplay; fullscreen; vr; xr-spatial-tracking; gyroscope; accelerometer"
-            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
-            onLoad={handleIframeLoad}
-            className={styles.iframe}
-          />
+          
         </div>
       </div>
       

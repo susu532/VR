@@ -1,6 +1,6 @@
 .emperiaCard {
-  min-height: 90vh;
-  height: 90vh;
+  min-height: 120vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
 }
