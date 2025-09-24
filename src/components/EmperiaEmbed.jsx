@@ -18,7 +18,23 @@ export default function EmperiaEmbed() {
   return (
     
     <Card3D variant="glass" hover3D={false} className={styles.emperiaCard}>
-      <div className={styles.emperiaCard}> <iframe
+      <div className={styles.emperiaCard}>  <div className={styles.emperiaToolbar}>
+        <div>
+          <div className={styles.badge}>
+            <GlowingText variant="gradient" size="small">
+              ✨ Virtual Experience
+            </GlowingText>
+          </div>
+        
+        </div>
+      <Button3D 
+            variant="outline" 
+            size="small"
+            onClick={() => window.open(url, '_blank')}
+          >
+            Open in New Tab
+          </Button3D></div>
+         <iframe
             title="Virtual Experience"
             src={url}
             frameBorder="0"
@@ -29,20 +45,7 @@ export default function EmperiaEmbed() {
           /></div>
      
       <div className={styles.emperiaWrapper}>
-        <div className={styles.emperiaToolbar}>
-          <div className={styles.badge}>
-            <GlowingText variant="gradient" size="small">
-              ✨ Virtual Experience
-            </GlowingText>
-          </div>
-          <Button3D 
-            variant="outline" 
-            size="small"
-            onClick={() => window.open(url, '_blank')}
-          >
-            Open in New Tab
-          </Button3D>
-        </div>
+       
 
         <div className={styles.emperiaFrame}>
           {isLoading && (

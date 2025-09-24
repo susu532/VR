@@ -13,13 +13,9 @@ export default function App() {
       
       <Header3D />
       <section className={styles.embedSection}>
+      
           <EmperiaEmbed />
-        </section>
-
-      <main className={styles.content}>
-       
-
-        <aside className={styles.infoSection}>
+          <aside className={styles.infoSection}>
           <Card3D variant="neumorphism" className={styles.infoCard}>
             <GlowingText as="h2" variant="gradient" size="large" glow>
               About This Experience
@@ -64,6 +60,13 @@ export default function App() {
             </div>
           </Card3D>
         </aside>
+          
+        </section>
+
+      <main className={styles.content}>
+       
+
+        
       </main>
 
       <footer className={styles.footer}>

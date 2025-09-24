@@ -32,17 +32,19 @@
 }
 
 .embedSection {
-  animation: slideInLeft 0.8s ease-out;
+  animation: slideInLeft 0.8s ease-out;display: flex;
 }
 
 .infoSection {
   animation: slideInUp 0.8s ease-out 0.2s both;
+  
 }
 
 .infoCard {
   height: fit-content;
   position: sticky;
   top: var(--space-xl);
+  width: 50vh;
 }
 
 .description {
