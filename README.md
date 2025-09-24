@@ -1,24 +1,12 @@
-# virtual experience
+# React + Vite
 
-Local prototype that demonstrates embedding an  VR experience into a React app using an `<iframe>`.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Getting started
+Currently, two official plugins are available:
 
-1. Install dependencies:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-```powershell
-cd "C:\Users\slayer\OneDrive\Bureau\dior"
-npm install
-```
+## Expanding the ESLint configuration
 
-2. Start dev server:
-
-```powershell
-npm run dev
-```
-
-3. Open `http://localhost:5173` and the virtual experience will be visible in the iframe. Replace the placeholder `EMPERIA_URL` in `src/components/EmperiaEmbed.jsx` with your published virtual experience embed URL.
-
-Notes
-
-- This project is a lightweight frontend-only prototype. For production, ensure the virtual experience URL allows embedding on your domain and follow virtual experience's documentation for authentication, if needed.
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

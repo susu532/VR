@@ -1,0 +1,258 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all var(--transition-slow);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    var(--surface-light) 0%,
+    rgba(255, 182, 193, 0.1) 25%,
+    rgba(221, 160, 221, 0.1) 50%,
+    var(--surface-mid) 75%,
+    var(--surface-deep) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Floating gradient orbs */
+.gradientOrb1,
+.gradientOrb2,
+.gradientOrb3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  animation: orbFloat 6s ease-in-out infinite;
+}
+
+.gradientOrb1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--primary-pink), transparent);
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.gradientOrb2 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--accent-purple), transparent);
+  top: 60%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.gradientOrb3 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, var(--radiant-glow), transparent);
+  bottom: 20%;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  33% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  66% {
+    transform: translateY(10px) scale(0.9);
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.title {
+  animation: slideInUp 1s ease-out;
+  line-height: 1.1;
+}
+
+.subtitle {
+  animation: slideInUp 1s ease-out 0.2s both;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: var(--space-lg);
+  animation: slideInUp 1s ease-out 0.4s both;
+}
+
+/* Floating elements */
+.floatingElements {
+  position: relative;
+  height: 500px;
+}
+
+.floatingCard1,
+.floatingCard2,
+.floatingCard3 {
+  position: absolute;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+}
+
+.floatingCard1 {
+  width: 120px;
+  height: 80px;
+  top: 10%;
+  right: 20%;
+  animation: cardFloat1 4s ease-in-out infinite;
+}
+
+.floatingCard2 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  right: 10%;
+  animation: cardFloat2 5s ease-in-out infinite;
+}
+
+.floatingCard3 {
+  width: 140px;
+  height: 60px;
+  bottom: 20%;
+  right: 30%;
+  animation: cardFloat3 3.5s ease-in-out infinite;
+}
+
+@keyframes cardFloat1 {
+  0%, 100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotateZ(5deg);
+  }
+}
+
+@keyframes cardFloat2 {
+  0%, 100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotateZ(-3deg);
+  }
+}
+
+@keyframes cardFloat3 {
+  0%, 100% {
+    transform: translateY(0px) rotateZ(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateZ(2deg);
+  }
+}
+
+/* Scrolled state */
+.scrolled {
+  min-height: auto;
+  padding: var(--space-lg) 0;
+}
+
+.scrolled .container {
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.scrolled .heroContent {
+  text-align: center;
+}
+
+.scrolled .floatingElements {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+  
+  .floatingElements {
+    height: 300px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gradientOrb1,
+  .gradientOrb2,
+  .gradientOrb3 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

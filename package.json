@@ -1,21 +1,41 @@
 {
-  "name": "dior-atelier-ateliers-of-dreams",
-  "version": "0.1.0",
+  "name": "0d63d6c33f4b9da0059d54c714f884dcd0f57298aaff9ea2e1f42905096e6ba3",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest --environment jsdom"
-  },
-  "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.7.0",
+    "comment-json": "^4.2.5",
+    "env-cmd": "^11.0.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup": "^4.44.1",
+    "vite": "^6.2.0",
+    "vite-plugin-static-copy": "^3.1.2"
+  },
+  "dependencies": {
+    "@kombai/react-error-boundary": "^1.1.0",
+    "date-fns": "^4.1.0",
+    "react-icons": "^5.5.0"
+  },
+  "strictDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "@vitejs/plugin-react": "^4.0.0",
-    "vitest": "^1.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/jest-dom": "^6.0.0"
   }

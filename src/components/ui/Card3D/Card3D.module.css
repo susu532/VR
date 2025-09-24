@@ -1,0 +1,135 @@
+.card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.hover3d {
+  cursor: pointer;
+}
+
+.hover3d:hover {
+  box-shadow: var(--shadow-3d);
+}
+
+/* Variants */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.solid {
+  background: var(--surface-card);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.gradient {
+  background: linear-gradient(135deg, 
+    rgba(255, 182, 193, 0.1), 
+    rgba(221, 160, 221, 0.1)
+  );
+  border: 1px solid rgba(255, 182, 193, 0.2);
+}
+
+.neumorphism {
+  background: var(--surface-light);
+  box-shadow: 
+    20px 20px 60px rgba(0, 0, 0, 0.1),
+    -20px -20px 60px rgba(255, 255, 255, 0.8);
+  border: none;
+}
+
+.neumorphism:hover {
+  box-shadow: 
+    inset 5px 5px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.8);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: var(--space-lg);
+}
+
+/* Glow effect */
+.glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 182, 193, 0.1) 0%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  pointer-events: none;
+}
+
+.card:hover .glow {
+  opacity: 1;
+}
+
+/* Floating animation for special cards */
+.floating {
+  animation: cardFloat 4s ease-in-out infinite;
+}
+
+@keyframes cardFloat {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(2deg);
+  }
+}
+
+/* Shimmer effect */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.8s ease;
+  z-index: 1;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+/* Special gradient border effect */
+.gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, var(--primary-pink), var(--accent-purple));
+  border-radius: inherit;
+  padding: 2px;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.gradient:hover::after {
+  opacity: 1;
+}
