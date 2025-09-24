@@ -6,7 +6,7 @@ export default function App() {
     <div className="app-root">
       <header className="hero">
         <div className="hero-content">
-          <h1>Dior — Atelier of Dreams</h1>
+          <h1>MohamedVr Experience</h1>
           <p>3D virtual experience  </p>
         </div>
       </header>
@@ -26,7 +26,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <small>Prototype — Dior Atelier of Dreams</small>
+        <small>Prototype — SusuExperience</small>
       </footer>
     </div>
   )
