@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // Replace this with your Emperia experience URL from the Emperia dashboard
-const EMPERIA_URL = 'https://community-experience.emperiavr.com/d17046df-16e2-4865-afff-4ae57fee41ed/2ed8379b-d3ba-42d3-aad3-00d3a8e2eb48/index.html'
+const EMPERIA_URL = 'https://experience.emperiavr.com/43a7a3df-694a-4288-bd52-45aaac28b975/public/419ffdc9-0165-4d1a-bca1-19203635d184/index.html'
 
 export default function EmperiaEmbed() {
   const [url] = useState(EMPERIA_URL)
