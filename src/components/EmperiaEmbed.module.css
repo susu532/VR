@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
 }
-
+.newtab{justify-content: space-between;}
 .emperiaWrapper {
   flex: 1;
   display: flex;
@@ -17,8 +17,8 @@
 
 .emperiaToolbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+ 
+  
   padding: var(--space-sm) 0;
 }
 
