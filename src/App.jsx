@@ -10,11 +10,12 @@ export default function App() {
   return (
     <div className={styles.appRoot}>
       <Header3D />
-
-      <main className={styles.content}>
-        <section className={styles.embedSection}>
+      <section className={styles.embedSection}>
           <EmperiaEmbed />
         </section>
+
+      <main className={styles.content}>
+       
 
         <aside className={styles.infoSection}>
           <Card3D variant="neumorphism" className={styles.infoCard}>

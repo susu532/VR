@@ -16,7 +16,9 @@ export default function EmperiaEmbed() {
   };
 
   return (
+    
     <Card3D variant="glass" hover3D={false} className={styles.emperiaCard}>
+      
       <div className={styles.emperiaWrapper}>
         <div className={styles.emperiaToolbar}>
           <div className={styles.badge}>
@@ -53,6 +55,7 @@ export default function EmperiaEmbed() {
           />
         </div>
       </div>
+      
     </Card3D>
   );
 }
