@@ -20,14 +20,8 @@ export default function EmperiaEmbed() {
     <Card3D variant="glass" hover3D={false} className={styles.emperiaCard}>
       <div className={styles.emperiaCard}>  <div className={styles.emperiaToolbar}>
         
-       
-      <Button3D 
-            variant="outline" 
-            size="small"
-            onClick={() => window.open(url, '_blank')}
-          >
-            Open in New Tab
-          </Button3D></div>
+        
+     </div>
          <iframe
             title="Virtual Experience"
             src={url}
