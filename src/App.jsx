@@ -51,7 +51,7 @@ export default function App() {
             </div>
 
             <div className={styles.actions}>
-              <Button3D variant="primary" onClick={() => window.open('https://experience.emperiavr.com/43a7a3df-694a-4288-bd52-45aaac28b975/public/24fbba32-bb60-49b8-bb41-db4516d456ef/index.html', '_blank')}>
+              <Button3D variant="primary" onClick={() => window.open('https://experience.emperiavr.com/43a7a3df-694a-4288-bd52-45aaac28b975/public/e137be28-5972-412b-a139-adbe00640d5b/index.html', '_blank')}>
                 Start Journey
               </Button3D>
               <Button3D variant="secondary">
