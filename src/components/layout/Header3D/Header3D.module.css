@@ -148,24 +148,24 @@
 }
 
 .floatingCard1 {
-  width: 120px;
-  height: 80px;
+  width: 260px;
+  height: 180px;
   top: 10%;
   right: 20%;
   animation: cardFloat1 4s ease-in-out infinite;
 }
 
 .floatingCard2 {
-  width: 100px;
-  height: 100px;
+  width: 220px;
+  height: 220px;
   top: 50%;
   right: 10%;
   animation: cardFloat2 5s ease-in-out infinite;
 }
 
 .floatingCard3 {
-  width: 140px;
-  height: 60px;
+  width: 280px;
+  height: 140px;
   bottom: 20%;
   right: 30%;
   animation: cardFloat3 3.5s ease-in-out infinite;

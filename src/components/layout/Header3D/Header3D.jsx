@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import GlowingText from '../../ui/GlowingText/GlowingText';
 import Button3D from '../../ui/Button3D/Button3D';
 import styles from './Header3D.module.css';
+import img1 from '../../../assets/1000_F_839888489_g1f8jLP4AyXMEsoXekAvPeQQvtW6Dbbc.jpg';
+import img2 from '../../../assets/360_F_1215424926_eSPkAOg48PI7rvrz1RPA0enMksBVBWXc.jpg';
+import img3 from '../../../assets/thumbbig-1382576.jpeg';
 
 const Header3D = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -59,9 +62,15 @@ const Header3D = () => {
         </div>
         
         <div className={styles.floatingElements}>
-          <div className={styles.floatingCard1}></div>
-          <div className={styles.floatingCard2}></div>
-          <div className={styles.floatingCard3}></div>
+          <div className={styles.floatingCard1}>
+            <img src={img1} alt="Floating 1" style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit'}} />
+          </div>
+          <div className={styles.floatingCard2}>
+            <img src={img2} alt="Floating 2" style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit'}} />
+          </div>
+          <div className={styles.floatingCard3}>
+            <img src={img3} alt="Floating 3" style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit'}} />
+          </div>
         </div>
       </div>
     </header>
