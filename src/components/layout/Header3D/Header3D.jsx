@@ -52,7 +52,7 @@ const Header3D = () => {
           </div>
           
           <div className={styles.ctaButtons}>
-            <Button3D variant="primary" size="large"  onClick={() => window.open('https://experience.emperiavr.com/43a7a3df-694a-4288-bd52-45aaac28b975/public/e137be28-5972-412b-a139-adbe00640d5b/index.html', '_blank')}>
+            <Button3D variant="primary" size="large"  onClick={() => window.open('https://experience.emperiavr.com/43a7a3df-694a-4288-bd52-45aaac28b975/public/a8c14542-768f-4ffd-af90-99f3ef04c252/index.html', '_blank')}>
               Enter Experience
             </Button3D>
             <Button3D variant="outline" size="large">

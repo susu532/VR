@@ -5,7 +5,7 @@ import GlowingText from './ui/GlowingText/GlowingText';
 import styles from './EmperiaEmbed.module.css';
 
 // Replace this with your Emperia experience URL from the Emperia dashboard
-const EMPERIA_URL = 'https://experience.emperiavr.com/43a7a3df-694a-4288-bd52-45aaac28b975/public/e137be28-5972-412b-a139-adbe00640d5b/index.html';
+const EMPERIA_URL = 'https://experience.emperiavr.com/43a7a3df-694a-4288-bd52-45aaac28b975/public/a8c14542-768f-4ffd-af90-99f3ef04c252/index.html';
 
 export default function EmperiaEmbed() {
   const [url] = useState(EMPERIA_URL);
